@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:focus-visible {
+	outline: 2px solid rgba(14,165,164,0.6);
+	outline-offset: 2px;
+}
