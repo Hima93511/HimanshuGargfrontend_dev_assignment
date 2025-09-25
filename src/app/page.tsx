@@ -141,10 +141,7 @@ export default function WorkersPage() {
         </div>
       </div>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        {workersData
-          .filter((worker) => worker.pricePerDay > 0)
-          .filter((worker) => worker.id !== null)
-          .sort((a, b) => a.name.localeCompare(b.name))
+        {filteredWorkers
           .map((worker: WorkerType) => (
             <div
               key={worker.id}

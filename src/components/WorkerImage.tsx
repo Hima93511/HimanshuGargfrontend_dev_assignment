@@ -16,7 +16,7 @@ const WorkerImage = ({ id, alt = 'worker', width = 150, height = 150 }: WorkerIm
       width={width}
       height={height}
       alt={alt}
-      onError={(e: any) => {
+      onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         e.currentTarget.src = '/workers/default.jpg'; // fallback
       }}
     />
